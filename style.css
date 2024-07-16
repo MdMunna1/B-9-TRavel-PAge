@@ -1,0 +1,99 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* shering css */
+:root{
+    --btn-color:rgb(255, 84, 0);
+    --text-color:rgb(19, 19, 24);
+}
+/* header section */
+header{
+    width: 100%;
+    
+    
+}
+nav{
+    padding: 5px 2px;
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+nav .logo img{
+    height: 40px;
+}
+nav span{
+    color: var(--btn-color);
+}
+.logo h2{
+    font-size: 4vw;
+}
+nav .menu-bar ul{
+    display:flex;
+    align-items: center;
+    gap: 2vw;
+}
+nav .menu-bar ul li{
+    list-style: none;
+}
+#color{
+    color: var(--btn-color);
+}
+
+nav .menu-bar ul li a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* bennar section  */
+.bennar{
+    margin: 10px auto;
+    height: 340px;
+    
+    width: 95%;
+    background-image: linear-gradient(30deg,rgba(27, 27, 27, 0.253),rgba(66, 65, 65, 0.425)),url(./B9A2-Hero-Travel/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+.bennar h1{
+    font-size: 6vw;
+    color: white;
+    padding: 10px ;
+}
+.bennar p{
+    font-size: 14px;
+    color: white;
+    padding: 10px 5px;
+}
+.bennar input,select,button{
+    height: 30px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 3px;
+}
+.bennar .inp-section{
+    margin-top: 20px;
+    padding: 4px 4px;
+    background: rgba(139, 135, 135, 0.582);
+    backdrop-filter: blur(4px);
+    border-radius: 7px;
+}
+.bennar button{
+    background-color: var(--btn-color);
+}
