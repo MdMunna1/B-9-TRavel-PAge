@@ -170,7 +170,7 @@ main {
 /* img contenar  */
 .img-contenar {
   width: 95%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 10px auto;
 }
 .fast-box {
@@ -267,7 +267,188 @@ main {
   background-size: cover;
   border-radius: 8px;
 }
+/* choose section */
+.choose-section {
+  max-width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+.choose-section h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  padding: 10px;
+}
+.choose-section p {
+  font-size: 15px;
+  padding: 10px;
+}
+/* location */
+.location {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.location-box1,
+.location-box2 {
+  background-color: rgba(185, 93, 6, 0.822);
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 180px;
+}
+.location-box1 {
+  background-color: rgba(252, 201, 144, 0.904);
+}
+.location-box1 h1 {
+  padding: 10px;
+}
+.location-box1 p {
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.location-box2 {
+  background-color: rgba(0, 255, 255, 0.226);
+}
+.location-box2 h1 {
+  padding: 10px 0px 10px 10px;
+}
+.location-box2 p {
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+/* best price */
+.best-price {
+  max-width: 450px;
+  margin: 30px auto;
+}
+.price {
+  background-color: #f5f7a583;
+  padding: 20px;
+  border-radius: 10px;
+}
+.price h1 {
+  padding: 10px;
+}
+.price p {
+  padding: 10px;
+}
+/* from section */
+.from-section {
+  width: 95%;
 
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+.from-text {
+  width: 50%;
+  height: 300px;
+  padding: 15px;
+  border: 2px solid rgba(245, 161, 6, 0.342);
+  border-radius: 10px;
+}
+.from-text h2 {
+  font-size: 22px;
+  padding: 3px 0px;
+}
+.from-text p {
+  font-size: 15px;
+  padding: 5px 0px 16px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+}
+.from-text input,
+.sub {
+  display: block;
+  padding: 10px;
+  margin: 20px 0px;
+  width: 100%;
+  border: none;
+}
+.from-text input {
+  border-radius: 6px;
+  background-color: rgba(128, 128, 128, 0.233);
+}
+.from-text .sub {
+  background-color: var(--btn-color);
+  text-align: center;
+  padding: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 40px;
+}
+.from-img {
+  border-radius: 10px;
+  background-image: url(./B9A2-Hero-Travel/Images/from.png.png);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.from-img h5 {
+  padding: 20px;
+}
+.from-img img {
+  width: 100%;
+  height: 100%;
+}
+/* img contenar box */
+.fast-imgbox {
+  width: 95%;
+  margin: 20px auto;
+  padding: 25px;
+  background-image: url(./B9A2-Hero-Travel/Images/Group\ 39.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fast-imgbox div {
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 50%;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+.fast-imgbox div h2 {
+  margin-left: 5px;
+  padding: 10px;
+}
+.fast-imgbox div p {
+  margin-left: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+.fast-imgbox div h4 {
+  margin-left: 5px;
+  padding: 10px;
+  color: var(--btn-color);
+}
+.fast-imgbox div button {
+  background-color: var(--btn-color);
+  margin-left: 15px;
+}
+.scnd {
+  background-image: url(./B9A2-Hero-Travel/Images/Rectangle\ 7.png);
+  justify-content: flex-start;
+}
+.trd{
+  background-image: url(./B9A2-Hero-Travel/Images/Rectangle\ 8.png)
+}
 @media screen and (max-width: 550px) {
   .popular {
     flex-direction: column;
@@ -295,8 +476,35 @@ main {
   .bennar {
     height: 400px;
   }
-  .fast-box,.secoud-box,.last-box{
+  .fast-box,
+  .secoud-box,
+  .last-box {
     grid-template-columns: 1fr;
   }
-  
+  .location {
+    flex-direction: column;
+  }
+  .location-box1,
+  .location-box2 {
+    width: 90%;
+  }
+  .from-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .from-text,
+  .from-img {
+    width: 90%;
+  }
+  .best-price {
+    width: 88%;
+  }
+  .fast-imgbox {
+    justify-content: center;
+
+    width: 95%;
+  }
+  .fast-imgbox div {
+    width: auto;
+  }
 }
